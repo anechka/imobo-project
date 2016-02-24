@@ -1,0 +1,396 @@
+doctype html
+html(lang="pt")
+   head
+      meta(charset="utf-8")
+      meta(http-equiv="X-UA-Compatible", content="IE=edge")
+      meta(name="viewport", content="width=device-width, initial-scale=1")
+      link(rel="stylesheet", href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
+      link(rel="stylesheet", type="text/css", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css")
+      link(href='http://fonts.googleapis.com/css?family=Righteous|Cabin|Pacifico', rel='stylesheet', type='text/css')
+      link(rel="stylesheet", type="text/css", href="css/email_marketing_form.css")
+      title Email marketing form
+   body
+      .container-fluid
+         header(id="header")
+            nav.navbar.navbar-inverse.navbar-fixed-top
+               .container
+                  .navbar-header
+                     button(type="button", class="navbar-toggle", data-toggle="collapse", data-target="#navbarCollapse")
+                        span.sr-only Toggle navigation
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                     a.navbar-brand(href="#")
+                        img(src="images/imobo2.png")
+                  #navbarCollapse.collapse.navbar-collapse
+                     ul.nav.navbar-nav.navbar-right
+
+                        li.active
+                           a(href='#') imóveis
+                        li
+                           a(href='#about') Email
+                        li
+                           a(href='#contact') Anúncios
+                        li
+                           a(href='#contact') Site
+                        li
+                           a(href='#contact') Perfil
+
+
+         .container.main-container
+            .col-md-12
+               .row
+                  ul.list-unstyled.list-inline.nav-menu
+                     li
+                        a.link-email-marketing(href="#") Email Marketing
+                     li
+                        a(href="#") Destinatários
+            .row
+               .col-md-12
+                  .row
+                     hr.hr-dark-grey
+
+            .row
+               .col-md-8
+                  .row
+                     .form.form-horizontal(role="form")
+                        .form-group
+                           label.col-md-4.text-right.label-form-control(for="nomedesta")
+                              | Nome desta campanha:
+                              br
+                              span.span-form-control Para seu controle, o cliente não verá essa informação
+                           .col-md-6
+                              .row
+                                 input.form-control(type="text",id="nomedesta", placeholder="")
+
+            .row
+               .col-md-8
+                  .row
+                     .form.form-horizontal(role="form")
+                        .form-group
+                           label.col-md-4.text-right.label-form-control(for="selectLista")
+                              | Selecione a lista:
+                              br
+                              span.span-form-control Se já tem uma lista de destinatários, selecione aqui.
+                           .col-md-4
+                              .row
+                                 select.form-control(id="selectLista")
+                                    option Lista 1
+                                    option Lista 2
+                                    option Lista 3
+                           .col-md-4.input-checkbox-container
+
+                              label
+                                 input(type='checkbox')
+                                 |  Enviar uma cópia para mim
+
+            .row
+               .col-md-8
+                  .row
+                     .form.form-horizontal(role="form")
+                        .form-group
+                           label.col-md-4.text-right.label-form-control(for="emailsTextarea")
+                              | Emails:
+                              br
+                              span.span-form-control Adicione manualmente ou copie e cole os emails aqui
+                           .col-md-8
+                              .row
+                                 textarea.form-control(rows='10',id="emailsTextarea")
+
+
+            .row
+               .col-md-12
+                  .row
+                     h3 Imóveis da campanha
+
+            .row
+               .col-md-12
+                  .row
+                     hr.hr-dark-grey
+
+            .col-md-12
+               .row
+                  .col-md-5
+                     .row
+                        .input-group
+                           input.form-control(type="text", placeholder="Buscar")
+                           span.input-group-addon
+                              i.fa.fa-search
+
+                  .col-md-2.pull-right
+                     .form.form-horizontal(role="form")
+                        .row
+                           .form.form-horizontal(role="form")
+                              select.form-control
+                                 option Todos imóveis
+                                 option Ativos
+                                 option Públicos
+                                 option Anúncios
+                                 option Destaques
+                                 option Inativos
+
+            .col-md-12
+               .row
+                  .table-responsive
+                     table.table.table-bordered
+                        thead
+                           tr
+                              th
+                                 input(type="checkbox")
+                              th Titulo
+                              th Tipo
+                              th Local
+                              th Preco
+                              th Visitas
+                              th Nota
+
+                        tbody
+                           tr
+                              td
+                                 input(type="checkbox")
+                              td Apartamento 3 dorms. Vila Prudente
+                              td Apto
+                              td Vila Marlene
+                              td 1.000.000
+                              td 23
+                              td 95
+
+                           tr
+                              td
+                                 input(type="checkbox")
+                              td Apartamento 3 dorms. Vila Prudente
+                              td casa
+                              td Moema
+                              td 950.000
+                              td 32
+                              td 90
+
+
+                           tr
+                              td
+                                 input(type="checkbox")
+                              td Apartamento 3 dorms. Vila Prudente
+                              td casa
+                              td Paulista
+                              td 240.000
+                              td 56
+                              td 45
+
+                           tr
+                              td
+                                 input(type="checkbox")
+                              td Apartamento 3 dorms. Vila Prudente
+                              td terreno
+                              td Paraíso
+                              td 750.000
+                              td 1
+                              td 90
+
+
+                           tr
+                              td
+                                 input(type="checkbox")
+                              td Apartamento 3 dorms. Vila Prudente
+                              td Loja
+                              td Dutra
+                              td 756.000
+                              td 34
+                              td 90
+
+                           tr
+                              td
+                                 input(type="checkbox")
+                              td Apartamento 3 dorms. Vila Prudente
+                              td galpao
+                              td Vila Marlene
+                              td 1.000.000
+                              td 66
+                              td 80
+
+                           tr
+                              td
+                                 input(type="checkbox")
+                              td Apartamento 3 dorms. Vila Prudente
+                              td apto
+                              td Vila Marlene
+                              td 1.000.000
+                              td 77
+                              td 80
+
+                           tr
+                              td
+                                 input(type="checkbox")
+                              td Apartamento 3 dorms. Vila Prudente
+                              td apto
+                              td Vila Marlene
+                              td 1.000.000
+                              td 88
+                              td 95
+
+                           tr
+                              td
+                                 input(type="checkbox")
+                              td Apartamento 3 dorms. Vila Prudente
+                              td casa
+                              td Vila Marlene
+                              td 1.000.000
+                              td 99
+                              td 70
+
+
+
+            .row
+               .col-md-12
+                  .row
+                     .col-md-11
+                        ul.pagination.pull-right(id="pagination")
+                     .col-md-1.select-number-container
+                        .form.form-horizontal(role="form")
+                           select.form-control
+                              option 10
+                              option 25
+                              option 50
+                              option 100
+
+            .row
+               .col-md-12
+                  .row
+                     h3 Corpo do email
+
+            .row
+               .col-md-12
+                  .row
+                     hr.hr-dark-grey
+
+
+            .row
+               .col-md-12
+                  .row
+                     .form.form-horizontal(role="form")
+                        .form-group
+                           label.col-md-2.text-right.label-form-control(for="assunto")
+                              | Assunto:
+                              br
+                              span.span-form-control Assunto do email que vai aparecer para o cliente.
+                           .col-md-8
+                              .row
+                                 input.form-control(type="text",id="assunto", placeholder="")
+
+            .row
+               .col-md-12
+                  .row
+                     .form.form-horizontal(role="form")
+                        .form-group
+                           label.col-md-2.text-right.label-texto(for="texto")
+                              | Texto do email:
+                              br
+                              span.span-form-control Mensagem que aparecerá no corpo do email para o seu cliente.
+                           .col-md-8
+                              .row
+                                 textarea.form-control(rows='12',id="texto")
+
+
+            .row
+               .col-md-12
+                  .row
+                     .col-md-2.text-right.layout-do-container
+                        span Layout do email
+                        br
+                        span.escolha Escolha se deseja enviar uma lista com fotos ou um mapa
+
+
+                     .col-md-10.image-container
+                        .row
+                           .col-md-5.text-center
+
+                                 a.thumbnail(href="#")
+                                    .caption
+                                       h3 Texto + Mapa + Foto + Lista
+                                    img(src="images/mapa.png", alt="Map Text Photo")
+
+                           .col-md-5.text-center
+                              a.thumbnail(href="#")
+                                 .caption
+                                    h3 Texto + Foto + Lista
+                                 img(src="images/mapa_text.png", alt="Text Photo",)
+
+            .row
+               .col-md-12
+                  .row
+                     .form.form-horizontal(role="form")
+                        .form-group
+                           label.col-md-2.text-right.label-form-control(for="enviar")
+                              | Enviar um teste:
+                              br
+                              span.span-form-control Envie um teste desta campanha. Adicione emails separados por vírgula
+                           .col-md-4
+                              .row
+                                 input.form-control(type="text",id="enviar", placeholder="")
+                           .col-md-2
+                              .row
+                                 button.btn.btn-primary.enviar-btn Enviar teste
+
+            .row
+               .col-md-12
+                  .row
+                     h3 Agendar campanha
+
+            .row
+               .col-md-12
+                  .row
+                     hr.hr-dark-grey
+
+            .row
+               .col-md-4.input-radio-container
+                  label Enviar agora
+                     input.pull-left(type="radio")
+                  br
+                  .row
+                     span.span-form-control A campanha será enviada no momento que clicar em enviar.
+            .row
+               .col-md-4.input-radio-container
+                  label Agendar
+                     input.pull-left(type="radio")
+                  br
+                  .row
+                     span.span-form-control A campanha será enviada no momento que clicar em enviar.
+
+            .row
+               .col-md-6.input-date-container
+                  .row
+                     .col-md-4
+                        form
+                           .form-group
+                              label(for='dia') Dia
+                              input#dia.form-control(type='date')
+
+                     .col-md-3
+                        .row
+                           .col-md-8
+                              .row
+                                 form
+                                    .form-group
+                                       label(for='hora') Hora
+                                       input#hora.form-control(type='time')
+
+
+
+            .row
+               .col-md-5.input-radio-container
+                  label Guardar rascunho
+                     input.pull-left(type="radio")
+                  br
+                  .row
+                     span.span-form-control Sua campanha será gravada como rascunho e poderá ser enviada mais tarde.
+
+            .row
+               .col-md-11.finalizar-btn-container
+                  button.btn.btn-success.pull-right.finalizar-btn Finalizar
+
+
+                  
+
+      script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+      script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js")
+      script(src="javascript/jquery.twbsPagination.min.js")
+      script(src="javascript/pagination.js")
